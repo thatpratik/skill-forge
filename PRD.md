@@ -16,12 +16,12 @@ SkillForge is a central, installable repository of reusable, self-contained AI-a
 
 ## Implementation Decisions
 
-- Install command: `npx skills add https://github.com/pratiksharma/skillforge` installs the full collection.
-- Install command: `npx skills add https://github.com/pratiksharma/skillforge --skill <name>` installs a single named skill.
+- Install command: `npx skills add https://github.com/thatpratik/skill-forge` installs the full collection.
+- Install command: `npx skills add https://github.com/thatpratik/skill-forge --skill <name>` installs a single named skill.
 - The `npx skills add` CLI already exists as an external tool; this repository only needs to be structurally compatible with it — the CLI itself is not built here.
 - Installed skills land under `.claude/skills/<name>/` in the target repo. Claude Code auto-discovers any `SKILL.md` there at the start of a session, so no extra registration step is required.
 - v1 seed content is the existing `idea-to-prototype` bundle of skills: `clarify-prd`, `clarify-constitution`, `suggest-next-iteration`, and `diary`. At least 10 more skills will be added over time.
-- Whether the `npx skills add` tool requires a root-level manifest/index file listing available skills is unresolved and needs to be confirmed later — not guessed here.
+- Verified end-to-end (2026-08-26): `npx skills add` requires no root-level manifest/index file — it auto-discovers every `SKILL.md` via a flat scan of `skills/`. Confirmed by running both the full-collection (`--all`) and single-skill (`--skill <name>`) flows against the local path and against the GitHub remote, with `.claude/skills/<name>/SKILL.md` landing byte-identical to the source in both cases.
 
 ## Out of Scope
 

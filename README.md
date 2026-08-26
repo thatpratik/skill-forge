@@ -10,13 +10,13 @@ one command.
 Install the entire collection:
 
 ```
-npx skills add https://github.com/pratiksharma/skillforge
+npx skills add https://github.com/thatpratik/skill-forge
 ```
 
 Install a single skill:
 
 ```
-npx skills add https://github.com/pratiksharma/skillforge --skill <name>
+npx skills add https://github.com/thatpratik/skill-forge --skill <name>
 ```
 
 Installed skills land in `.claude/skills/<name>/`, where Claude Code picks them up
