@@ -1,0 +1,8 @@
+{
+  "name": "skill-forge",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node --experimental-strip-types scripts/validate-skills.ts"
+  }
+}

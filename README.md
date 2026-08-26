@@ -30,3 +30,26 @@ automatically at the start of a session — no extra registration step required.
 | `clarify-constitution` | Interviews the user to establish the project constitution — language, stack, and architecture standards that stay fixed across all tasks — then writes CONSTITUTION.md (with approval). |
 | `suggest-next-iteration` | Suggests the next iteration to build, based on PRD.md and CONSTITUTION.md. Use after a PRD exists and the user wants to know what to build next. |
 | `diary` | Write and maintain an implementation diary capturing what changed, why, what worked, what failed, what was tricky, and how to review and validate. |
+| `build-awwwards-quality-sites` | Art-directs and builds Awwwards-quality, motion-rich marketing/portfolio/landing sites — GSAP choreography, one smooth-scroll engine, optional Three.js shaders, and accessibility/performance safeguards. |
+| `landing-page-design` | End-to-end landing page system: intake questions, page structure, layout selection, conversion copywriting, SEO, and strict visual rules for typography, spacing, and motion. |
+| `web-design-engineer` | Builds or redesigns polished browser-rendered visual artifacts (pages, dashboards, prototypes, UI mockups, data viz) in HTML/CSS/JS/React, with design critique and browser-based QA. |
+
+## Contributing a skill
+
+Every folder under `skills/` must contain a `SKILL.md` with `name` and `description` in its
+frontmatter, and the `name` must match the folder name — this is what `npx skills add` scans
+for. Check a new skill before committing it:
+
+```
+npm run validate
+```
+
+## Troubleshooting
+
+If `npx skills add` hangs with no output, check `npm config get registry` — a private/internal
+registry mirror that's unreachable will make npm block on package resolution indefinitely instead
+of failing fast or falling back to a local cache. Point at the public registry to work around it:
+
+```
+npm_config_registry=https://registry.npmjs.org npx skills add ...
+```
