@@ -32,7 +32,15 @@ automatically at the start of a session — no extra registration step required.
 | `diary` | Write and maintain an implementation diary capturing what changed, why, what worked, what failed, what was tricky, and how to review and validate. |
 | `build-awwwards-quality-sites` | Art-directs and builds Awwwards-quality, motion-rich marketing/portfolio/landing sites — GSAP choreography, one smooth-scroll engine, optional Three.js shaders, and accessibility/performance safeguards. |
 | `landing-page-design` | End-to-end landing page system: intake questions, page structure, layout selection, conversion copywriting, SEO, and strict visual rules for typography, spacing, and motion. |
-| `web-design-engineer` | Builds or redesigns polished browser-rendered visual artifacts (pages, dashboards, prototypes, UI mockups, data viz) in HTML/CSS/JS/React, with design critique and browser-based QA. |
+| `web-design-engineer` | Builds or redesigns polished browser-rendered visual artifacts (pages, dashboards, prototypes, UI mockups, data viz) in HTML/CSS/JS/React, with design critique and browser-based QA. Includes a library of style recipes (Swiss, Y2K, MUJI, Stripe Press, and more). |
+| `frontend-design` | Guidance for distinctive, intentional visual design when building or reshaping UI — aesthetic direction, typography, and avoiding templated defaults. |
+| `apple-design` | Apple's approach to interface design and fluid, physical motion, translated for the web — gestures, springs, materials, and typography. |
+| `emil-design-eng` | Emil Kowalski's philosophy on UI polish, component design, animation decisions, and invisible details. |
+| `animate` | Builds a web animation from scratch — purpose, tool, properties, curve/duration, interruption, and exit. |
+| `animate-expo` | Builds React Native/Expo animations with Reanimated, Gesture Handler, and expo-haptics. |
+| `find-animation-opportunities` | Read-only scan of a codebase or UI for places that should animate but don't, with exact proposed values. |
+| `animation-vocabulary` | Reverse-lookup glossary that turns a vague motion description into its exact animation term. |
+| `ask-sonner` | Guide to the Sonner React toast library — setup, toast variants, styling, theming, and troubleshooting. |
 
 ## Contributing a skill
 
